@@ -68,6 +68,7 @@ function draw() {
   circle(100,550,20);
 
   // mario
+  text('mario',450,85 );
 
   // mario's pet
   stroke("white");
@@ -83,18 +84,41 @@ function draw() {
   
   //lichaam
   fill("red");
-  rect(330,75,130,80);
-  
-  
+  rect(330,95,130,80);
 
+    //kleuren
+  fill("green");
+  rect(370,95,60,30);
+  rect(440,135,20,40);
+
+  square(330,45,40);
+
+  fill("yellow");
+  square(430,95,30);
+  
+  rect(340,55,10,20);
+  
+   
+  //pixels weghalen
+  fill("white");
+  square(330,85,20);
+  square(330,105,10);
+  square(330,155,10);
+  square(450,125,10);
+  square(450,95,10);
+  square(330,45,10);
+
+  rect(330,165,20,10);
+  rect(410,125,40,20);
+
+  async function setup() {
+  // Load the image.
+  img = await loadImage('/Assets/picture.png');
 
   
-
-  
-
-  
-  
-
+  // Draw the image and scale it to fit within the canvas.
+  image(img, 10, 10, width, height, 10, 10, img.width, img.height, CONTAIN);
+  }
 
 
 
