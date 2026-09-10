@@ -4,6 +4,7 @@ function setup() {
 
 function draw() {
   background("220");
+  fill("black");
   text('Kjeld van der Wiel',25,25);
 
   //stoplicht
@@ -34,6 +35,9 @@ function draw() {
   rect(25,110,200,33);
 
   //boter kaas en eieren
+
+  stroke("black");
+  strokeWeight(2);
 
   fill("white");
   square(25,400,75);
@@ -104,13 +108,11 @@ function draw() {
   rect(410,125,40,20);
   rect(400,45,20,10);
 
-   // mario
+   // shadoo
   fill ("black");
   stroke("white");
   strokeWeight(0);
   text('shadoo',450,285);
-
-  // mario's pet
 
   fill('black');
   rect(340,235,90,10);
