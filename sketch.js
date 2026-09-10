@@ -7,8 +7,6 @@ function draw() {
   text('Kjeld van der Wiel',25,25);
 
   //stoplicht
-  //stroke("black");
-  //strokeWeight(4);
 
   fill("grey");
   rect(700,50,40,100,5);
@@ -48,8 +46,10 @@ function draw() {
   square(50,425,25);
 
   //huisje
+  stroke("black");
+  strokeWeight(3);
 
-  fill(250, 0.1);
+  fill(250);
   square(25,300,50);
   triangle(25,300,75,300,50,275); 
 
@@ -68,35 +68,25 @@ function draw() {
   circle(100,550,20);
 
   // mario
-  text('mario',450,85 );
+  stroke("white");
+  strokeWeight(0);
+  fill("black")
+  text('mario, indentiteit gestolen door doopliss',450,85 );
 
   // mario's pet
   stroke("white");
   strokeWeight(0);
-  fill("red");
+  fill('purple');
   rect(340,35,90,10);
   rect(350,25,50,10);
 
   //gezicht && hoofd
-  fill("yellow");
   rect(340,45,70,50);
   rect(330,55,10,30);
   
   //lichaam
-  fill("red");
   rect(330,95,130,80);
-
-    //kleuren
-  fill("green");
-  rect(370,95,60,30);
-  rect(440,135,20,40);
-
-  square(330,45,40);
-
-  fill("yellow");
-  square(430,95,30);
-  
-  rect(340,55,10,20);
+  square(400,55,30);
   
    
   //pixels weghalen
@@ -107,19 +97,47 @@ function draw() {
   square(450,125,10);
   square(450,95,10);
   square(330,45,10);
+  square(420,75,10);
+  square(420,55,10);
 
   rect(330,165,20,10);
   rect(410,125,40,20);
+  rect(400,45,20,10);
 
-  async function setup() {
-  // Load the image.
-  img = await loadImage('/Assets/picture.png');
+   // mario
+  fill ("black");
+  stroke("white");
+  strokeWeight(0);
+  text('shadoo',450,285);
 
+  // mario's pet
+
+  fill('black');
+  rect(340,235,90,10);
+  rect(350,225,50,10);
+
+  //gezicht && hoofd
+  rect(340,245,70,50);
+  rect(330,255,10,30);
   
-  // Draw the image and scale it to fit within the canvas.
-  image(img, 10, 10, width, height, 10, 10, img.width, img.height, CONTAIN);
-  }
+  //lichaam
+  rect(330,295,130,80);
+  square(400,255,30);
+  
+   
+  //pixels weghalen
+  fill("white");
+  square(330,285,20);
+  square(330,305,10);
+  square(330,355,10);
+  square(450,325,10);
+  square(450,295,10);
+  square(330,245,10);
+  square(420,275,10);
+  square(420,255,10);
 
-
+  rect(330,365,20,10);
+  rect(410,325,40,20);
+  rect(400,245,20,10);
 
 }
