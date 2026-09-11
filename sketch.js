@@ -4,27 +4,31 @@ function setup() {
 
 function draw() {
   background("220");
+  strokeWeight(0);
   fill("black");
-  text('Kjeld van der Wiel',25,25);
+  text('1 Kjeld van der Wiel',25,25);
 
   //stoplicht
-
+  strokeWeight(0);
+  text("6",700,160);
   fill("grey");
   rect(700,50,40,100,5);
   rect(710,150,20,70,5);
 
   //licht
-  fill("red")
+  fill("red");
   circle(720,70,20);
 
-  fill("orange")
+  fill("orange");
   circle(720,100,20);
 
-  fill("green")
+  fill("green");
   circle(720,130,20);
 
   //vlag
-  
+  strokeWeight(0);
+  fill("black");
+  text("2",25,40);
   fill("red");
   rect(25,50,200,33);
 
@@ -35,7 +39,9 @@ function draw() {
   rect(25,110,200,33);
 
   //boter kaas en eieren
-
+  fill("black");
+  strokeWeight(0);
+  text("3",10,400);
   stroke("black");
   strokeWeight(2);
 
@@ -50,15 +56,19 @@ function draw() {
   square(50,425,25);
 
   //huisje
+  strokeWeight(0);
+  text("4",10,350);
   stroke("black");
   strokeWeight(3);
 
-  fill(250);
+  fill("white"); // normaal 255,0,1
   square(25,300,50);
   triangle(25,300,75,300,50,275); 
 
   //dobbelsteen
-
+  fill("black");
+  strokeWeight(0);
+  text("5",25,625);
   fill("white");
   stroke("black");
   strokeWeight(4);
@@ -75,7 +85,7 @@ function draw() {
   stroke("white");
   strokeWeight(0);
   fill("black")
-  text('mario, indentiteit gestolen door doopliss',450,85 );
+  text(' 7 mario, indentiteit gestolen door doopliss',450,85 );
 
   // mario's pet
   stroke("white");
@@ -92,7 +102,6 @@ function draw() {
   rect(330,95,130,80);
   square(400,55,30);
   
-   
   //pixels weghalen
   fill("white");
   square(330,85,20);
@@ -108,11 +117,11 @@ function draw() {
   rect(410,125,40,20);
   rect(400,45,20,10);
 
-   // shadoo
+  //shadoo
   fill ("black");
   stroke("white");
   strokeWeight(0);
-  text('shadoo',450,285);
+  text('8 shadoo',450,285);
 
   fill('black');
   rect(340,235,90,10);
